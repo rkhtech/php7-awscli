@@ -1,4 +1,4 @@
-FROM php:7.1.1
+FROM php:cli
 
 MAINTAINER Randy Hommel
 
