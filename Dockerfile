@@ -1,8 +1,6 @@
-FROM php:cli
+FROM alpine
 
 MAINTAINER Randy Hommel
 
-RUN apt-get update && apt-get install -y python-pip
-RUN curl -O https://bootstrap.pypa.io/get-pip.py
-RUN python get-pip.py
+RUN apk add py-pip php-cli
 RUN pip install awscli
